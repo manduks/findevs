@@ -2,7 +2,7 @@ App = React.createClass({
   render() {
     return (
       <div>
-        Main
+        {this.props.children}
       </div>
     )
   }
