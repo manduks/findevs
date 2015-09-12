@@ -13,9 +13,7 @@ Main = React.createClass({
             </span>
             <span className="found">100 CANDIDATES FOUND</span>
           </div>
-          <div className="candidate">
-
-          </div>
+          <CandidatesList/>
         </section>
       </section>
     )
