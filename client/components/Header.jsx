@@ -1,4 +1,5 @@
 Header = React.createClass({
+  mixins : [ReactRouter.Navigation],
   render() {
     return (
       <section className="hero">
@@ -9,8 +10,8 @@ Header = React.createClass({
               <div className="header-nav">
                 <nav>
                   <ul className="member-actions">
-                    <li><a href="#download" className="login">Log in</a></li>
-                    <li><a href="#download" className="btn-white btn-small">Sign up</a></li>
+                    <li><a className="login" onClick={this.redirecTologin}>Log in</a></li>
+                    <li><a  className="btn-white btn-small" onClick={this.redirecTologin}>Sign up</a></li>
                   </ul>
                 </nav>
               </div>
@@ -34,5 +35,9 @@ Header = React.createClass({
         <div className="down-arrow floating-arrow"><a href="#"><i className="fa fa-angle-down"></i></a></div>
       </section>
     )
+  },
+  redirecTologin (e) {
+    e.preventDefault();
+    this.transitionTo('login');
   }
 });

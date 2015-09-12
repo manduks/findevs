@@ -4,8 +4,6 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-autopublish
-insecure
 standard-minifiers
 meteor-base
 mobile-experience
@@ -24,3 +22,5 @@ fourseven:scss
 react
 reactrouter:react-router
 ecmascript
+accounts-github
+service-configuration
