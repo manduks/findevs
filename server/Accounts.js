@@ -8,7 +8,8 @@ ServiceConfiguration.configurations.insert({
 });
 
 Accounts.onCreateUser(function(options, user) {
-    console.log(options);
-    console.log(user);
+    if (options.profile) {
+        user.profile = options.profile;
+    }
     return user;
 });

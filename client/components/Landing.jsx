@@ -2,7 +2,7 @@ Landing = React.createClass({
   render() {
     return (
       <section>
-        <Header />
+        <Content />
         <section className="intro section-padding">
             <div className="container">
                 <div className="row">
